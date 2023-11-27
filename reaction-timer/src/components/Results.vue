@@ -15,11 +15,11 @@ export default {
 	},
 	mounted() {
 		if ( this.score < 250) {
-			this.rank = 'Ninja Fingers'
+			this.rank = '🥷 Ninja Fingers'
 		} else if ( this.score < 400) {
-			this.rank = 'Ninja Fingers'
+			this.rank = '🤩 Rapid Reflexes'
 		} else {
-			this.rank = "Snail pace ..."
+			this.rank = "🐌 Snail pace ..."
 		}
 	}
 
@@ -29,6 +29,7 @@ export default {
 
 <style>
 	.result {
+		margin: 50px auto;
 		color: #e21f1f;
 		font-weight: bold;
 		font-size: 20px;
@@ -36,6 +37,6 @@ export default {
 	.rank {
 		color: #15bf94;
 		font-weight: bold;
-		font-size: 24px;
+		font-size: 30px;
 	}
 </style>

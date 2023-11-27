@@ -24,6 +24,7 @@ export default {
   },
   methods: {
 	start() {
+		this.showResults = false;
 		this.delay = 2000 + Math.random() * 5000
 		this.isPlaying = true
 	},
@@ -50,13 +51,14 @@ export default {
 	}
 
 	.btn {
+		margin: 10px;
 		padding: 10px 30px;
 		font-weight: bold;
 		font-size: 16px;
 		letter-spacing: 1px;
 		color: #fff;
 		background: linear-gradient(90deg, #00E0FF 1.82%, #00FFA3 100%);
-		border-radius: 10px;
+		border-radius: 7px;
 		border: 1px solid #15bf94;
 		transition: all 0.3s ease;
 		cursor: pointer;
@@ -64,8 +66,6 @@ export default {
 	button:hover {
 		background: linear-gradient(60deg, #00E0FF 1.82%, #00FFA3 30%);
 		box-shadow: 0 0 7px rgba(21, 191, 148, 0.5);
-		border: 1px solid #00FFA3;
-
 	}
 
 	button:disabled {
