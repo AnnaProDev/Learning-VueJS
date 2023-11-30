@@ -1,0 +1,24 @@
+ {
+	 "posts":[
+	{
+		"id": 1,
+		"title": "welcome to the blog", 
+	"body": "Welcome to our blog, a digital space where ideas thrive and conversations flourish. Dive into a world of insights, inspiration, and valuable content as we explore topics that matter to you. Join us on this journey of discovery and stay tuned for engaging articles, tips, and stories that promise to enrich your knowledge and spark your curiosity.", 
+	"tags": [
+		"webdev",
+		"coding",
+		"news"
+	]
+	},
+	{
+		"id": 2,
+		"title": "top 5 CSS tips", 
+	"body": "Unlock the potential of your web design with our top 5 CSS tips! From responsive layouts to sleek animations, discover expert insights that will elevate your coding skills and take your projects to the next level. Dive into our latest blog post and transform your CSS game effortlessly.", 
+	"tags": [
+		"webdev",
+		"coding",
+		"css"
+	]
+	}
+  ]
+ }
