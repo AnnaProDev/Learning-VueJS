@@ -6,29 +6,29 @@
 
 <script>
 export default {
-	props: ['delay'],
+	props: ['delay'], //Take props
 	data() {
 		return {
-			showBlock: false,
+			showBlock: false, 
 			timer: null,
-			reactionTime: 0,
+			reactionTime: 0,// Track the amount of time it takes for the user to click on the square
 		}
 	},
 	mounted() { 
-		setTimeout( () => {
-			this.showBlock = true;
+		setTimeout( () => { //Wait delay
+			this.showBlock = true; //Show block after delay is up
 			this.startTimer()
-		}, this.delay)
+		}, this.delay) //We pass in this delay as a prop
 	},
 	methods: {
 		startTimer() {
 			this.timer = setInterval( () => {
-				this.reactionTime += 10;
+				this.reactionTime += 10; // We're timing the reaction time in steps of 10 ms  
 			}, 10)
 		},
 		stopTimer() {
-			clearInterval(this.timer)
-			this.$emit('end', this.reactionTime)
+			clearInterval(this.timer) //Stop and clear timer
+			this.$emit('end', this.reactionTime) //Custom event
 		},
 	},
 };

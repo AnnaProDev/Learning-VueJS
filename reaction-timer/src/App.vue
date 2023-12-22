@@ -16,8 +16,8 @@ export default {
   components: { Block, Results },
   data() {
 	return {
-		isPlaying: false,
-		delay: null,
+		isPlaying: false, // That's going to keep track of whether a user is playing or not
+		delay: null, // This is the amount of time before the block appears on the screen
 		score: null,
 		showResults: false,
 	}
@@ -25,8 +25,8 @@ export default {
   methods: {
 	start() {
 		this.showResults = false;
-		this.delay = 2000 + Math.random() * 5000
-		this.isPlaying = true
+		this.delay = 2000 + Math.random() * 5000 //set delay, random amount between 2000 and 7000 milliseconds
+		this.isPlaying = true //start game
 	},
 	endGame(reactionTime) {
 		this.showResults = true;
